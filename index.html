@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<title>陈列师测评</title>
+	<meta name="description" content="陈列测评" />
+	<meta name="keywords" content="陈列测评" />
+	<link href="./css/common.css" rel="stylesheet" />
+	<style type="text/css">
+	html,body {
+		height: 100%;
+	}
+	body {
+		/*height: 100%;*/
+		font-family: SourceHanSansCN-Regular;
+		background-image: url(https://ceshi.chenliegonghe.cn/tour/images/ceping/backgroud.jpg);
+		/*background-repeat: no-repeat;*/
+		background-size: 100% 100%;
+		color: #000000;
+		font-size: 20px;
+	}
+	a {
+		text-decoration: none;
+		color: #000000;
+	}
+	.index-container {
+		display: flex;
+		padding: 0 57px;
+		min-height: 100%;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.level-contianer {
+		display: flex;
+		justify-content: space-between;
+		/*margin: 20px 0;*/
+		width: 86%;
+	}
+	.radio-container {
+		display: flex;
+		align-items: flex-start;
+		padding: 20px 0;
+	}
+	input[type="radio" i] {
+		display: none;
+	}
+	input:checked+.radio {
+		background-color: #ffd900;
+	}
+	.radio-container .radio {
+		display: inline-block;
+		box-sizing: border-box;
+		margin-top: 6px;
+		margin-right: 4px;
+		width: 18px;
+		height: 18px;
+		line-height: 26px;
+		border: 4px solid #ffd900;
+		border-radius: 50%;
+	}
+	.radio-container p {
+		flex: 1;
+	}
+	.button {
+		display: inline-block;
+		margin-top: 10px;
+		margin-bottom: 57px;
+		width: 100%;
+		height: 42px;
+		background-color: #ffd900;
+		border-radius: 19px;
+		line-height: 42px;
+		text-align: center;
+		letter-spacing: 1px;
+		font-size: 20px;
+		color: #1e1e1e;
+	}
+	.pen-icon {
+		height: 12px;
+		margin-right: 6px;
+	}
+</style>
+</head>
+<body>
+	<div class="index-container">
+		<div class="level-title">
+			陈列师等级
+		</div>
+		<div class="level-contianer">
+			<label class="radio-container">
+				<input type="radio" name="level" value="1">
+				<span class="radio"></span>
+				<p>初级</p>
+			</label>
+			<label class="radio-container">
+				<input type="radio" name="level" value="2">
+				<span class="radio"></span>
+				<p>中级</p>
+			</label>
+			<label class="radio-container">
+				<input type="radio" name="level" value="3">
+				<span class="radio"></span>
+				<p>高级</p>
+			</label>
+		</div>
+		<a class="button" href="./pages/test1.html">
+			<img class="pen-icon" src="./imgs/pen-icon.png" alt="" />
+			开始测评
+		</a>
+		<!-- <button type="button">开始测评</button> -->
+	</div>
+
+</body>
+</html>

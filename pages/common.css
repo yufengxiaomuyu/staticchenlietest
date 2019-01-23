@@ -1,0 +1,18 @@
+charset "UTF-8";
+/**
+ *
+ * @authors Your Name (you@example.org)
+ * @date    2019-01-21 11:58:53
+ * @version $Id$
+ */
+	* {
+		margin: 0;
+		padding: 0;
+	}
+/*	a.button {
+		text-decoration: none;
+		color: #000000;
+	}*/
+	ul {
+		list-style: none;
+	}

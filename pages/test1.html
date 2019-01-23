@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<title>初级陈列师</title>
+	<meta name="description" content="陈列测评" />
+	<meta name="keywords" content="陈列测评" />
+	<link href="../css/common.css" rel="stylesheet" />
+	<style type="text/css">
+	body {
+		font-family: SourceHanSansCN-Normal;
+		color: #000000;
+		font-size: 18px;
+	}
+	a {
+		text-decoration: none;
+		color: #000000;
+	}
+	.test1-container {
+		display: flex;
+		flex-direction: column;
+		padding-top: 40px;
+		box-sizing: border-box;
+	}
+	.question-contianer {
+		display: flex;
+		flex-direction: column;
+		min-height: 480px;
+	}
+	.question-title {
+		display: flex;
+		padding: 0 30px;
+	}
+	.question-index {
+		margin-right: 6px;
+	}
+	.question-text {
+		flex: 1;
+	}
+	li:first-child .radio-container {
+		padding-top: 60px;
+	}
+	.radio-container {
+		display: flex;
+		align-items: flex-start;
+		padding: 24px 36px;
+	}
+	input[type="radio" i] {
+		display: none;
+	}
+	input:checked+.radio {
+		background-color: #ffd900;
+	}
+	.radio {
+		display: inline-block;
+		box-sizing: border-box;
+		margin-top: 4px;
+		margin-right: 12px;
+		width: 16px;
+		height: 16px;
+		line-height: 26px;
+		border: 4px solid #ffd900;
+		border-radius: 50%;
+	}
+	.radio-container p {
+		flex: 1;
+	}
+	.bottom-contianer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+	.questions-index {
+		margin-bottom: 12px;
+	}
+	.button {
+		display: inline-block;
+		width: 120px;
+		height: 32px;
+		background-color: #ffd900;
+		border-radius: 6px;
+		line-height: 32px;
+		text-align: center;
+		letter-spacing: 1px;
+		font-size: 20px;
+		color: #1e1e1e;
+	}
+</style>
+</head>
+<body>
+	<div class="test1-container">
+		<div class="question-contianer">
+			<div class="question-title">
+				<p class="question-index">1.</p>
+				<p class="question-text">店铺中的哪个设计没有用到人体工程学 [单选题]</p>
+			</div>
+			<ul class="options">
+				<li>
+					<label class="radio-container">
+						<input type="radio" name="answer1" value="1">
+						<span class="radio"></span>
+						<p>小王把收银台的高度设置在了1米</p>
+					</label>
+				</li>
+				<li>
+					<label class="radio-container">
+						<input type="radio" name="answer1" value="1">
+						<span class="radio"></span>
+						<p>小红在1米9高的层板上叠放了多款打底衫</p>
+					</label>
+				</li>
+				<li>
+					<label class="radio-container">
+						<input type="radio" name="answer1" value="1">
+						<span class="radio"></span>
+						<p>小李的服装店的衣钩缺口朝向一律向内或向左</p>
+					</label>
+				</li>
+				<li>
+					<label class="radio-container">
+						<input type="radio" name="answer1" value="1">
+						<span class="radio"></span>
+						<p>小张把通道设计在1米3宽左右</p>
+					</label>
+				</li>
+			</ul>
+		</div>
+		<div class="bottom-contianer">
+			<p class="questions-index">
+				<span>1</span>
+				<span>/</span>
+				<span>4</span>
+			</p>
+			<div>
+				<a class="button" href="./test2.html">下一题</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
